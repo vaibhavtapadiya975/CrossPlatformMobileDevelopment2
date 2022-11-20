@@ -1,21 +1,20 @@
----
-name: .NET MAUI - Calculator
-description: Calculator application that demonstrates Grid layout, styling, and event handling.
-page_type: sample
-languages:
-- csharp
-- xaml
-products:
-- dotnet-maui
-urlFragment: apps-calculator
----
+# CrossPlatformMobileDevelopment
+Project created for Course CS 797R Cross Platform Mobile Development
 
-# Calculator Sample App
 
-This basic calculator demonstrates using span and spacing features of a Grid layout to achieve a familiar interface.
-
-For more information, see the [Grid documentation](https://docs.microsoft.com/dotnet/maui/user-interface/layouts/grid).
-
-![Calculator Mac application screenshot](images/macos.png "Calculator application screenshot")
-
-![Calculator iOS application screenshot](images/ios.png "Calculator application screenshot")
+Group Project members:
+  1. Vaibhav Tapadiya
+  2. Snehal Babar
+  3. Vikas Singaram
+  
+  
+  Work Resposniblites:
+  Vaibhav was responsible for making API and Integrating the API with our calculator app.
+  Snehal was responsible for designing excercise page and changing flyout layout to add excercise in menu.
+  Vikas was responsible for creating question for excercise questions.
+  
+  Link to repository : https://github.com/vaibhavtapadiya975/CrossPlatformMobileDevelopment 
+ ![Calculator iOS application screenshot](Excercise/images/Screenshot1.png "Calculator Flyout Menu")
+![Calculator Mac application screenshot](Excercise/images/Screenshot2.png "Calculator Basic Operation")
+![Calculator Mac application screenshot](Excercise/images/Screenshot3.png "Calculator With divide by 0 Error")
+![Calculator iOS application screenshot](Excercise/images/Screenshot4.png "Sidebar Menu Page")
