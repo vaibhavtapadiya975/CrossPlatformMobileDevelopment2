@@ -7,8 +7,8 @@
 # Team Member-3: Vikas singaram. (Z292U397)
 
 
-Video Link: [https://youtu.be/_RyO_DbyFWM]
-Github Link: [https://github.com/vaibhavtapadiya975/CrossPlatformMobileDevelopment2/tree/main/Mvvm]
+Video Link: https://youtu.be/_RyO_DbyFWM
+  Github Link: https://github.com/vaibhavtapadiya975/CrossPlatformMobileDevelopment2/tree/main/Mvvm
 
 
 
