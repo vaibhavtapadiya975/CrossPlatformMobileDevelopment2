@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{FF78F279-7CD5-404E-9E1A-ABE8451F4999}|Default">
+  <MonoDevelop.Ide.ItemProperties.Navigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C881CDEB-D999-4E20-9D30-DB9E86E07571" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Navigation.Tests/MainViewModelTests.cs">
+    <Files>
+      <File FileName="Navigation.Tests/MainViewModelTests.cs" Line="18" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Navigation" expanded="True" selected="True">
+            <Node name="Navigation" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Navigation.Tests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Navigation.Android PreferredExecutionTarget="Android.phone_m-dpi_5_4in_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
