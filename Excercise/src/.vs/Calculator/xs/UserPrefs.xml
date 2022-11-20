@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{F2C4A6AC-F8F7-4C11-B31C-2CAC8978731E}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calculator/MainPage.xaml.cs">
+    <Files>
+      <File FileName="Calculator/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Calculator/MainPage.xaml.cs" Line="148" Column="66" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Calculator" expanded="True">
+            <Node name="Calculator" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
+  <MonoDevelop.Ide.ItemProperties.Calculator PreferredExecutionTarget="MyAppleMacCatalystID" />
+</Properties>

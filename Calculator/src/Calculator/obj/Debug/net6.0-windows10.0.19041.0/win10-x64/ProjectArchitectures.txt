@@ -1,0 +1,1 @@
+H:\Cross Platform for Mobile Development\Project2\6.0\Apps\Calculator\src\Calculator\Calculator.csproj;x64

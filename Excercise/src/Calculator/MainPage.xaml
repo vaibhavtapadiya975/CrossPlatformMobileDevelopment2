@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+            x:Class="Calculator.MainPage"
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid x:Name="main_frame"
+          RowSpacing="-20" ColumnSpacing="-50"
+          RowDefinitions="2*,*,*,*,*,*,*"
+          ColumnDefinitions="*,*,*,*,*"
+          BackgroundColor="Black">
+
+        <Label x:Name="CurrentCalculation"
+               FontSize="22"
+               LineBreakMode="NoWrap"
+               Grid.ColumnSpan="4"
+               Text=""
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="Start"
+               Grid.Row="0"
+               TextColor="White" Margin="0" />
+
+        <Label x:Name="resultText"
+               FontSize="25" FontAttributes="Bold" Text="0"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               LineBreakMode="NoWrap" Grid.ColumnSpan="4" 
+               TextColor="White"/>
+
+        <BoxView BackgroundColor="{StaticResource LightGray}" HeightRequest="0"
+                 Grid.Row="0" VerticalOptions="End"
+                 Grid.ColumnSpan="4"
+                 />
+
+        <Button 
+                Text="(" TextColor="Black" FontSize="Medium"
+                Grid.Row="1" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="onParanthesis"
+                />
+        <Button 
+                Text=")" TextColor="Black" FontSize="Medium"
+                Grid.Row="1" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="onParanthesis"/>
+        <Button 
+                x:Name="modoperator"
+                Text="mod" TextColor="Black" FontSize="Small"
+                Grid.Row="1" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="OnSelectOperator"/>
+        <Button 
+                Text="C" TextColor="Black" FontSize="Medium"
+                Grid.Row="2" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="OnClear"/>
+        <Button 
+                x:Name="addsubtract"
+                Text="+/-" TextColor="Black" FontSize="Medium"
+                Grid.Row="2" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="OnNegative"/>
+        <Button 
+                x:Name="percent"
+                Text="%" TextColor="Black" FontSize="Medium"
+                Grid.Row="2" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="50"  WidthRequest="50"
+                Background="RGB(165,165,165)"
+                Clicked="OnPercentage"/>
+        <Button 
+                Text="7" TextColor="White" FontSize="Medium"
+                Grid.Row="3" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="8" TextColor="White" FontSize="Medium"
+                Grid.Row="3" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="9" TextColor="White" FontSize="Medium"
+                Grid.Row="3" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="4" TextColor="White" FontSize="Medium"
+                Grid.Row="4" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="5" TextColor="White" FontSize="Medium"
+                Grid.Row="4" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="6" TextColor="White" FontSize="Medium"
+                Grid.Row="4" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="1" TextColor="White" FontSize="Medium"
+                Grid.Row="5" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="2" TextColor="White" FontSize="Medium"
+                Grid.Row="5" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="3" TextColor="White" FontSize="Medium"
+                Grid.Row="5" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="00" TextColor="White" FontSize="Medium"
+                Grid.Row="6" Grid.Column="0"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                Text="0" TextColor="White" FontSize="Medium"
+                Grid.Row="6" Grid.Column="1"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                x:Name="dot"
+                Text="." TextColor="White" FontSize="Medium"
+                Grid.Row="6" Grid.Column="2"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(80,80,80)"
+                Clicked="OnSelectNumber"/>
+        <Button 
+                x:Name="sroot"
+                Text="√x" TextColor="White" FontSize="Medium"
+                Grid.Row="1" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnSquareRoot"/>
+        <Button 
+                Text="÷" TextColor="White" FontSize="Medium"
+                Grid.Row="2" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnSelectOperator"/>
+        <Button 
+                Text="x" TextColor="White" FontSize="Large"
+                Grid.Row="3" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnSelectOperator"/>
+        <Button 
+                Text="-" TextColor="White" FontSize="Medium"
+                Grid.Row="4" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnSelectOperator"/>
+        <Button 
+                Text="+" TextColor="White" FontSize="Medium"
+                Grid.Row="5" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnSelectOperator"/>
+        <Button 
+                Text="=" TextColor="White" FontSize="Medium"
+                Grid.Row="6" Grid.Column="3"
+                CornerRadius="60" 
+                HeightRequest="55"  WidthRequest="55"
+                Background="RGB(241,163,60)"
+                Clicked="OnCalculate"/>
+
+
+    </Grid>
+</ContentPage>
