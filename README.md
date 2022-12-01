@@ -13,7 +13,7 @@ Group Project members:
   Snehal was responsible for designing excercise page and changing flyout layout to add excercise in menu.
   Vikas was responsible for creating question for excercise questions.
   
-  Link to repository : https://github.com/vaibhavtapadiya975/CrossPlatformMobileDevelopment 
+  Link to repository : https://github.com/vaibhavtapadiya975/CrossPlatformMobileDevelopment2 
   
   
   demo video link :https://youtube.com/shorts/F2w_zMdwdxE?feature=share 

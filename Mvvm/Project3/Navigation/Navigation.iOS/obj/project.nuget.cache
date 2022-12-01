@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OxXdWSD21EbKUZP0GUGyWiXfYJ2IP5+32Ei4bg/Sv+kF5e8iv3SeuOjHurCrtZB3xlQNxscbiD5I2Kkz67cvxg==",
+  "dgSpecHash": "ttsdzqmnTePWCtC3TYdg5x/DPsjAItcTW7poDyM5EfDlkfX1sIXSzimPzbMOjfgYPYlz6Lt2H1zaGjB0/KlesQ==",
   "success": true,
-  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
+  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vaibh\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\vaibh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",

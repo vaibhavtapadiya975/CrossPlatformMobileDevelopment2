@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EYjK20EwlMhjIlo0+Dca4rlAgdrjK1y0x31NdF1GeHr/fFcX+J9GnrrPPsMg4IDyGGZktebz3PjmqMFIEbThpg==",
+  "dgSpecHash": "J+F4aZB8hqqxRvkX5tACSLENfc4fNi6j98LjOAYrckEiy2PpTVNmzSCYSVKU2Q4pIbh9uXJUw3PtjITUvEfGaA==",
   "success": true,
-  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
+  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vaibh\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\vaibh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",

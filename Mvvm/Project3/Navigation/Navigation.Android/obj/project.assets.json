@@ -2425,11 +2425,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
+      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
       "projectName": "Navigation.Android",
-      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
+      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.Android\\Navigation.Android.csproj",
       "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.Android\\obj\\",
+      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2451,8 +2451,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj": {
-              "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj"
+            "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj": {
+              "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj"
             }
           }
         }

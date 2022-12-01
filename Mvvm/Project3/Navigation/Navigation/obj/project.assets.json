@@ -594,11 +594,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
+      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
       "projectName": "Navigation",
-      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
+      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
       "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\obj\\",
+      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

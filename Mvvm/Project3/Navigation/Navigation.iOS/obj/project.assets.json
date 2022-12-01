@@ -1244,11 +1244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
+      "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
       "projectName": "NavigationIOS",
-      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
+      "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\Navigation.iOS.csproj",
       "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\obj\\",
+      "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1270,8 +1270,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj": {
-              "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj"
+            "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj": {
+              "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj"
             }
           }
         }

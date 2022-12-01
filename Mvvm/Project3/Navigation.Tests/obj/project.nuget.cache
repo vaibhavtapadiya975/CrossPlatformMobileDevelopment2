@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jXYmQcSB5NA1csOx2VG5bCs9col7vlPXRqo+EcK6MI/w4r9zkBus/Mx7FN2Px3En1A02ecBewzoKwIid1u6Nag==",
+  "dgSpecHash": "lsaUnahftKsh5NP0wdY2rC6T1B6Z+5iXwj3wVZ1C4HSVonsP2+WcsAFNGQsP4hjQetvwUTBjs3WrVtr0reRDKw==",
   "success": true,
-  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation.Tests\\Navigation.Tests.csproj",
+  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation.Tests\\Navigation.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vaibh\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\vaibh\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",

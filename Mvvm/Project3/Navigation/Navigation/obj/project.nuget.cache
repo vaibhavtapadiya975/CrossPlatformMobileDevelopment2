@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QwordB4XuBN0rZDlufVZZwnVklMwQF4R7GUQPRLDPdW6GHg5kVwh/RgkCFR4AwtHazkoZhvr9kh0F0b5iJQAXA==",
+  "dgSpecHash": "e/rL5UQWE/yrhpsVjk2OXa7wOwyHmpmwySBBcbpzzHpi2wWQ1rX0vQ/O43RObWZDwHPN80Aq1g1VJ7I9EgQ52g==",
   "success": true,
-  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
+  "projectFilePath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Mvvm\\Project3\\Navigation\\Navigation\\Navigation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vaibh\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\vaibh\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
