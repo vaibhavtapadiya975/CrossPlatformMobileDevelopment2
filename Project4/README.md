@@ -8,5 +8,5 @@
 
 ![alt text](images/Picture1.png "Calculator Main Page screenshot")
 ![alt text](images/Picture2.png "Calculator History Page screenshot")
-Video Link: https://youtu.be/Yh4MG9CpGBk
+![alt text] Video Link: https://youtu.be/Yh4MG9CpGBk
 
