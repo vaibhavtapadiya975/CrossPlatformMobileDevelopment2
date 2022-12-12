@@ -1,0 +1,869 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project5</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.ValidationRules.Extensions.ExtendedPropertyChanged">
+            <summary>
+            Notifies clients that a property value has changed
+            </summary>
+        </member>
+        <member name="E:Plugin.ValidationRules.Extensions.ExtendedPropertyChanged.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ExtendedPropertyChanged.NotifyPropertyChanged(System.String)">
+            <summary>
+            Notifies clients that a property value has changed
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ExtendedPropertyChanged.SetProperty``1(``0@,``0,System.String)">
+            <summary>
+            Assign a new value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="storage"></param>
+            <param name="value"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Extensions.ToCapitalizeCase(System.String)">
+            <summary>
+            Capitalize the first character and add a space before each capitalized letter (except the first character).
+            </summary>
+            <param name="the_string"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plugin.ValidationRules.Extensions.Validator">
+            <summary>
+            Builder for the <see cref="T:Plugin.ValidationRules.Validatable`1"/> class.
+            Provides extension methods for configuring the <see cref="T:Plugin.ValidationRules.Validatable`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.Build``1">
+            <summary>
+            Builds a <see cref="T:Plugin.ValidationRules.Validatable`1"/> property
+            of type <typeparamref name="TModel"/> using a fluent api.
+            </summary>
+            <typeparam name="TModel">The validatable model type.</typeparam>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsCreditCard(Plugin.ValidationRules.Validatable{System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.CreditCardRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsEmail(Plugin.ValidationRules.Validatable{System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmailRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsEmpty(Plugin.ValidationRules.Validatable{System.Object},System.Object,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmptyRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.EmptyRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsNotEmpty``1(Plugin.ValidationRules.Validatable{``0},``0,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEmptyRule`1"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.NotEmptyRule`1"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsEnum(Plugin.ValidationRules.Validatable{System.Object},System.Type,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EnumRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="enumType">The enumerable type used in the <see cref="T:Plugin.ValidationRules.Rules.EnumRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsEqual(Plugin.ValidationRules.Validatable{System.Object},System.Object,System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="comparisonValue">Default value to be compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsEqual(Plugin.ValidationRules.Validatable{System.Object},System.Func{System.Object,System.Object},System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="func">Delegate method used to get the value to compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsNotEqual(Plugin.ValidationRules.Validatable{System.Object},System.Object,System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="comparisonValue">Default value to be compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsNotEqual(Plugin.ValidationRules.Validatable{System.Object},System.Func{System.Object,System.Object},System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="func">Delegate method used to get the value to compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsGreaterThan(Plugin.ValidationRules.Validatable{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsGreaterThanOrEqual(Plugin.ValidationRules.Validatable{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanOrEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanOrEqualRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsInclusiveBetween(Plugin.ValidationRules.Validatable{System.IComparable},System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.InclusiveBetweenRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="from">Minimum value comparer.</param>
+            <param name="to">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsLessThan(Plugin.ValidationRules.Validatable{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LessThanRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.LessThanRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsLessThanOrEqual(Plugin.ValidationRules.Validatable{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LessThanOrEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.LessThanOrEqualRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsNull(Plugin.ValidationRules.Validatable{System.Object},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NullRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.IsNotNull(Plugin.ValidationRules.Validatable{System.Object},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmailRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Minimum value comparer.</param>
+            <param name="max">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Func{System.Object,System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Delegate function that provides the minimum value comparer.</param>
+            <param name="max">Delegate function that provides the maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithExactLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.ExactLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="length">Length use for the <see cref="T:Plugin.ValidationRules.Rules.ExactLengthRule"/> validator.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithExactLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="length">Delegate function that provides the length value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithMaxLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MaxLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="max">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithMaxLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MaxLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="max">Delegate function that provides the maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithMinimumLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MinimumLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Minimum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithMinimumLengthRule(Plugin.ValidationRules.Validatable{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MinimumLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Delegate function that provides the minimum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithRegularExpression(Plugin.ValidationRules.Validatable{System.String},System.String,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression in <see cref="T:System.String"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithRegularExpression(Plugin.ValidationRules.Validatable{System.String},System.Text.RegularExpressions.Regex,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="regex">The regular expression in <see cref="T:System.Text.RegularExpressions.Regex"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithRegularExpression(Plugin.ValidationRules.Validatable{System.String},System.String,System.Text.RegularExpressions.RegexOptions,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression in <see cref="T:System.String"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="options">The regular expression option.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithRegularExpression(Plugin.ValidationRules.Validatable{System.String},System.Func{System.Object,System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expressionFunc">The regular expression delegate function
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.Validator.WithRegularExpression(Plugin.ValidationRules.Validatable{System.String},System.Func{System.Object,System.String},System.Text.RegularExpressions.RegexOptions,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression delegate function
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="options">The regular expression option.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="T:Plugin.ValidationRules.Extensions.ValidatorList">
+            <summary>
+            Builder for the <see cref="T:Plugin.ValidationRules.ValidatableList`1"/> class.
+            Provides extension methods for configuring the <see cref="T:Plugin.ValidationRules.ValidatableList`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.Build``1">
+            <summary>
+            Builds a <see cref="T:Plugin.ValidationRules.ValidatableList`1"/> property
+            of type <typeparamref name="TModel"/> using a fluent api.
+            </summary>
+            <typeparam name="TModel">The validatable model type.</typeparam>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsCreditCard(Plugin.ValidationRules.ValidatableList{System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.CreditCardRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsEmail(Plugin.ValidationRules.ValidatableList{System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmailRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsEmpty(Plugin.ValidationRules.ValidatableList{System.Object},System.Object,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmptyRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.EmptyRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsNotEmpty``1(Plugin.ValidationRules.ValidatableList{``0},``0,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEmptyRule`1"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.NotEmptyRule`1"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsEnum(Plugin.ValidationRules.ValidatableList{System.Object},System.Type,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EnumRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="enumType">The enumerable type used in the <see cref="T:Plugin.ValidationRules.Rules.EnumRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsEqual(Plugin.ValidationRules.ValidatableList{System.Object},System.Object,System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="comparisonValue">Default value to be compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsEqual(Plugin.ValidationRules.ValidatableList{System.Object},System.Func{System.Object,System.Object},System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="func">Delegate method used to get the value to compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsNotEqual(Plugin.ValidationRules.ValidatableList{System.Object},System.Object,System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="comparisonValue">Default value to be compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsNotEqual(Plugin.ValidationRules.ValidatableList{System.Object},System.Func{System.Object,System.Object},System.Collections.IEqualityComparer,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NotEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="func">Delegate method used to get the value to compare with.</param>
+            <param name="equalityComparer">Default comparer object.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsGreaterThan(Plugin.ValidationRules.ValidatableList{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsGreaterThanOrEqual(Plugin.ValidationRules.ValidatableList{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanOrEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.GreaterThanOrEqualRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsInclusiveBetween(Plugin.ValidationRules.ValidatableList{System.IComparable},System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.InclusiveBetweenRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="from">Minimum value comparer.</param>
+            <param name="to">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsLessThan(Plugin.ValidationRules.ValidatableList{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LessThanRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.LessThanRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsLessThanOrEqual(Plugin.ValidationRules.ValidatableList{System.IComparable},System.IComparable,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LessThanOrEqualRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="defaultValue">The default value used in the <see cref="T:Plugin.ValidationRules.Rules.LessThanOrEqualRule"/>
+            validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsNull(Plugin.ValidationRules.ValidatableList{System.Object},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.NullRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.IsNotNull(Plugin.ValidationRules.ValidatableList{System.Object},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.EmailRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Int32,System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Minimum value comparer.</param>
+            <param name="max">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Func{System.Object,System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Delegate function that provides the minimum value comparer.</param>
+            <param name="max">Delegate function that provides the maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithExactLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.ExactLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="length">Length use for the <see cref="T:Plugin.ValidationRules.Rules.ExactLengthRule"/> validator.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithExactLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.LengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="length">Delegate function that provides the length value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithMaxLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MaxLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="max">Maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithMaxLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MaxLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="max">Delegate function that provides the maximum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithMinimumLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Int32,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MinimumLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Minimum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithMinimumLengthRule(Plugin.ValidationRules.ValidatableList{System.Int32},System.Func{System.Object,System.Int32},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.MinimumLengthRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="min">Delegate function that provides the minimum value comparer.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithRegularExpression(Plugin.ValidationRules.ValidatableList{System.String},System.String,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression in <see cref="T:System.String"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithRegularExpression(Plugin.ValidationRules.ValidatableList{System.String},System.Text.RegularExpressions.Regex,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="regex">The regular expression in <see cref="T:System.Text.RegularExpressions.Regex"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithRegularExpression(Plugin.ValidationRules.ValidatableList{System.String},System.String,System.Text.RegularExpressions.RegexOptions,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression in <see cref="T:System.String"/> format
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="options">The regular expression option.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithRegularExpression(Plugin.ValidationRules.ValidatableList{System.String},System.Func{System.Object,System.String},System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expressionFunc">The regular expression delegate function
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.Extensions.ValidatorList.WithRegularExpression(Plugin.ValidationRules.ValidatableList{System.String},System.Func{System.Object,System.String},System.Text.RegularExpressions.RegexOptions,System.String)">
+            <summary>
+            Add the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation to the validatable property.
+            </summary>
+            <param name="validatable">The validatable property were the new validation
+            rule will be added.</param>
+            <param name="expression">The regular expression delegate function
+            used in the <see cref="T:Plugin.ValidationRules.Rules.RegularExpressionRule"/> validation.</param>
+            <param name="options">The regular expression option.</param>
+            <param name="errorMessage">The custom validation message.</param>
+        </member>
+        <member name="T:Plugin.ValidationRules.Interfaces.IValidationRule`1">
+            <summary>
+            Verify that the data a user enters in a record meets the standards you specify before the user can save the record.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Plugin.ValidationRules.Interfaces.IValidationRule`1.ValidationMessage">
+            <summary>
+            The validation error message that will be displayed if validation fails.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Interfaces.IValidationRule`1.Check(`0)">
+            <summary>
+            Used to perform the required validation
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Plugin.ValidationRules.Validatable`1">
+            <summary>
+            Provides a way for an object to be validated.
+            </summary>
+            <typeparam name="T">Type of the data to be validated</typeparam>
+        </member>
+        <member name="M:Plugin.ValidationRules.Validatable`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.Validatable`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Validatable`1.#ctor(Plugin.ValidationRules.Interfaces.IValidationRule{`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.Validatable`1"/> class that takes a variable number of <see cref="T:Plugin.ValidationRules.Interfaces.IValidationRule`1"/>.
+            </summary>
+            <param name="validations">List of <see cref="T:Plugin.ValidationRules.Validatable`1"/> to be added.</param>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.Validations">
+            <summary>
+            List of standards or validations you specify before the user can save the record
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.Formatter">
+            <summary>
+            Reference formatter is attempting to format the property.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.Errors">
+            <summary>
+            List of errors users have before can save the record
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.Error">
+            <summary>
+            First or Default error of the main error list. 
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.Value">
+            <summary>
+            Reference value is attempting to assign to the property.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.ValueFormatted">
+            <summary>
+            Formatted value.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.IsValid">
+            <summary>
+            The value indicating whether the validation succeeded.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.Validatable`1.HasErrors">
+            <summary>
+            The value indicating whether the validation has errors.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.Validatable`1.Validate">
+            <summary>
+            Used to  perform the validations of the property
+            </summary>
+            <returns>Gets a value indicating whether the validation succeeded.</returns> 
+        </member>
+        <member name="T:Plugin.ValidationRules.ValidatableList`1">
+            <summary>
+            Provides a way for an object to be validated.
+            </summary>
+            <typeparam name="T">Type of the data to be validated</typeparam>
+        </member>
+        <member name="M:Plugin.ValidationRules.ValidatableList`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.ValidatableList`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.ValidatableList`1.#ctor(Plugin.ValidationRules.Interfaces.IValidationRule{`0}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.ValidatableList`1"/> class that takes a variable number of <see cref="T:Plugin.ValidationRules.Interfaces.IValidationRule`1"/>.
+            </summary>
+            <param name="validations">List of <see cref="T:Plugin.ValidationRules.Interfaces.IValidationRule`1"/> to be added.</param>
+        </member>
+        <member name="T:Plugin.ValidationRules.ValidationUnit">
+            <summary>
+            Provides a way for a List of <see cref="T:Plugin.ValidationRules.Validatable`1"/> to be validated.
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.ValidationUnit.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.ValidationUnit"/> class.
+            </summary>
+            <param name="objects">List of <see cref="T:Plugin.ValidationRules.Validatable`1"/> to be validated</param>
+        </member>
+        <member name="M:Plugin.ValidationRules.ValidationUnit.#ctor(System.Collections.Generic.IEnumerable{Plugin.ValidationRules.Interfaces.IValidity})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Plugin.ValidationRules.ValidationUnit"/> class.
+            </summary>
+            <param name="objects">List of <see cref="T:Plugin.ValidationRules.Validatable`1"/> to be validated</param>
+        </member>
+        <member name="P:Plugin.ValidationRules.ValidationUnit.IsValid">
+            <summary>
+            The value indicating whether the validation succeeded.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.ValidationUnit.Errors">
+            <summary>
+            List of errors users have before can save the record
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.ValidationUnit.HasErrors">
+            <summary>
+            The value indicating whether the validation has errors.
+            </summary>
+        </member>
+        <member name="P:Plugin.ValidationRules.ValidationUnit.Error">
+            <summary>
+            First or Default error of the main error list. 
+            </summary>
+        </member>
+        <member name="M:Plugin.ValidationRules.ValidationUnit.Validate">
+            <summary>
+            Used to  perform the validations of the list of <see cref="T:Plugin.ValidationRules.Validatable`1"/>
+            </summary>
+            <returns>Gets a value indicating whether the validation succeeded.</returns> 
+        </member>
+        <member name="M:Plugin.ValidationRules.Validator`1.Build``1">
+            <summary>
+            Builds a <see cref="T:Plugin.ValidationRules.Validatable`1"/> property
+            of type <typeparamref name="T"/> using a fluent api.
+            </summary>
+            <typeparam name="T">The validatable model type.</typeparam>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+    </members>
+</doc>

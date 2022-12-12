@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project5.Views.AdminPage"
+             Title="AdminPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to Admin Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Enter Question"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <Entry MaxLength="15"
+               Text="{Binding Question.question}"/>
+
+        <Label Text="Option1"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <Entry MaxLength="15"
+               Text="{Binding Question.option1}"/>
+        <Label Text="Option2"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <Entry MaxLength="15"
+               Text="{Binding Question.option2}"/>
+        <Label Text="Option3"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <Entry MaxLength="15"
+               Text="{Binding Question.option3}"/>
+        <Label Text="Answer"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Start"
+               TextColor="Black" Margin="0"/>
+        <Entry MaxLength="15"
+               Text="{Binding Question.answer}"/>
+        <StackLayout Margin="10,10,10,10">
+            <Button
+                    x:Name="Submit"
+                    Text="Save Question"
+                    FontSize="15"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Command="{Binding AddQuestionCommand}"
+                />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

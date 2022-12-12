@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:50260",
+      "sslPort": 44375
+    }
+  },
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "MsixPackage",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7228;http://localhost:5228",
+      "environmentVariables": {
+       "ASPNETCORE_ENVIRONMENT": "Development",
+       "nativeDebugging": false
+      }
+    },
+  "IIS Express": {
+    "commandName": "IISExpress",
+    "launchBrowser": true,
+    "launchUrl": "swagger",
+    "environmentVariables": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+  }
+}

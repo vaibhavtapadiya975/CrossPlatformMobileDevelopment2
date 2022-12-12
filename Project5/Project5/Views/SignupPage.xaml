@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project5.Views.SignupPage"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:handlers="clr-namespace:Project5.Handlers"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="SignupPage">
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Label 
+            Text="Create an account"
+            FontSize="25"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            />
+        <StackLayout Margin="10,10,10,10">
+            <Label
+                    Text="First Name"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    FontAttributes="None"
+                />
+            <Entry MaxLength="15"
+                   Text="{Binding User.Fname}"/>
+        </StackLayout>
+        <StackLayout Margin="10,10,10,10">
+            <Label
+                    Text="Last Name"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    FontAttributes="None"
+                />
+            <Entry MaxLength="15"
+                   Text="{Binding User.Lname}"/>
+        </StackLayout>
+        <StackLayout Margin="10,10,10,10">
+            <Label
+                    Text="Email"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    FontAttributes="None"
+                />
+            <Entry  
+                    
+                    MaxLength="30"
+                    Text="{Binding User.Email}"/>
+
+        </StackLayout>
+        <StackLayout Margin="10,10,10,10">
+            <Label
+                    Text="Mobile No"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    FontAttributes="None"
+                />
+            <Entry 
+                   x:Name="Email"
+                   MaxLength="15"
+                   Text="{Binding User.mobileNo}">
+            </Entry>
+        </StackLayout>
+        <StackLayout Margin="10,10,10,10">
+            <Label
+                    Text="Password"
+                    FontSize="15"
+                    HorizontalOptions="StartAndExpand"
+                    FontAttributes="None"
+                />
+            <Entry
+                IsPassword="True"
+                Text="{Binding User.password}"
+                MaxLength="15"/>
+            
+        </StackLayout>
+        <StackLayout Margin="10,10,10,10">
+            <Button
+                    x:Name="Submit"
+                    Text="Create Account"
+                    FontSize="15"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Command="{Binding AddUserCommand}"
+                    
+                />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,11 @@
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\QuestionAPI.exe
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\QuestionAPI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\QuestionAPI.deps.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\QuestionAPI.runtimeconfig.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\QuestionAPI.pdb
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment\QuestionAPI\QuestionAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

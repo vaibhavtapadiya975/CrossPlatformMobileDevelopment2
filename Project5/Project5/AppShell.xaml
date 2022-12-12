@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Project5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Project5"
+    xmlns:views="clr-namespace:Project5.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <ShellContent
+        Title="LoginPage" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />   
+    <ShellContent 
+        Title="Signup Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:SignupPage}"
+        Route="SignupPage" />
+    <ShellContent
+        Title="Admin Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:AdminPage}"
+        Route="AdminPage" />
+    <ShellContent
+        Title="User Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:UserPage}"
+        Route="UserPage" />
+    <ShellContent
+        Title="Quiz Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate views:QuizPage}"
+        Route="QuizPage" />
+    <!--<Shell.FlyoutFooter>
+        <StackLayout Padding="20">
+            <Button Text="Sign Out" Command="{Binding SignOutCommand}" />
+        </StackLayout>
+    </Shell.FlyoutFooter>-->
+</Shell>

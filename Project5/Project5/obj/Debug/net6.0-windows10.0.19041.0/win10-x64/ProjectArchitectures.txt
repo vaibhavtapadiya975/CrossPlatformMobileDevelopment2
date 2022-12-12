@@ -1,0 +1,1 @@
+H:\Cross Platform for Mobile Development\Project5\Project5\Project5.csproj;x64
