@@ -1,27 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/QuestionAPI.csproj": {}
+    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\QuestionAPI\\QuestionAPI\\QuestionAPI.csproj": {}
   },
   "projects": {
-    "/Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/QuestionAPI.csproj": {
+    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\QuestionAPI\\QuestionAPI\\QuestionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/QuestionAPI.csproj",
+        "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\QuestionAPI\\QuestionAPI\\QuestionAPI.csproj",
         "projectName": "QuestionAPI",
-        "projectPath": "/Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/QuestionAPI.csproj",
-        "packagesPath": "/Users/snehal/.nuget/packages/",
-        "outputPath": "/Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/obj/",
+        "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\QuestionAPI\\QuestionAPI\\QuestionAPI.csproj",
+        "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
+        "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\QuestionAPI\\QuestionAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/snehal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vaibh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/M5d5hjRmvVEZS2OT819K3XRSDsjRgy15X6I3gosByyCzoxwabI/api": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net6.0": {
@@ -63,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

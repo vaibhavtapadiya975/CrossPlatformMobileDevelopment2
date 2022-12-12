@@ -31,7 +31,9 @@ namespace QuestionAPI.Controllers
         [HttpGet]
         public IActionResult List()
         {
-            return Ok(_questionRepository.All);
+            var temp = _questionRepository.All;
+            Console.WriteLine(temp);
+            return Ok(temp);
         }
         #endregion
 

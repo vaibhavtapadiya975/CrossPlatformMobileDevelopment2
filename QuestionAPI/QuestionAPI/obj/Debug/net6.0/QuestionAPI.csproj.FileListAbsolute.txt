@@ -52,3 +52,30 @@ H:/Cross Platform for Mobile Development/CrossPlatformMobileDevelopment/Question
 /Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/obj/Debug/net6.0/QuestionAPI.pdb
 /Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/obj/Debug/net6.0/QuestionAPI.genruntimeconfig.cache
 /Users/snehal/Documents/WSU/Fall2022/CPMD/Project-1/CrossPlatformMobileDevelopment/QuestionAPI/QuestionAPI/obj/Debug/net6.0/ref/QuestionAPI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\appsettings.Development.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\appsettings.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\QuestionAPI.exe
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\QuestionAPI.deps.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\QuestionAPI.runtimeconfig.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\QuestionAPI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\QuestionAPI.pdb
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.csproj.AssemblyReference.cache
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.GeneratedMSBuildEditorConfig.editorconfig
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.AssemblyInfoInputs.cache
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.AssemblyInfo.cs
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.csproj.CoreCompileInputs.cache
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.MvcApplicationPartsAssemblyInfo.cs
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.MvcApplicationPartsAssemblyInfo.cache
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\staticwebassets.build.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\staticwebassets.development.json
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\scopedcss\bundle\QuestionAPI.styles.css
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.csproj.CopyComplete
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\refint\QuestionAPI.dll
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.pdb
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\QuestionAPI.genruntimeconfig.cache
+H:\Cross Platform for Mobile Development\CrossPlatformMobileDevelopment2\QuestionAPI\QuestionAPI\obj\Debug\net6.0\ref\QuestionAPI.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Excercise\\src\\Calculator\\Calculator.csproj": {}
+    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Excercise\\src\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Excercise\\src\\Calculator\\Calculator.csproj": {
+    "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Excercise\\src\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Excercise\\src\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Excercise\\src\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Excercise\\src\\Calculator\\Calculator.csproj",
+        "projectPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Excercise\\src\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\vaibh\\.nuget\\packages\\",
-        "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment\\Excercise\\src\\Calculator\\obj\\",
+        "outputPath": "H:\\Cross Platform for Mobile Development\\CrossPlatformMobileDevelopment2\\Excercise\\src\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -31,7 +31,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/M5d5hjRmvVEZS2OT819K3XRSDsjRgy15X6I3gosByyCzoxwabI/api": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net6.0-android31.0": {
